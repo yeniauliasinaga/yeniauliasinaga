@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCT</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-green-800 text-white">
+  <div class="container mx-auto flex justify-between items-center">
+    <img class="h-20 w-auto" src="image/nct.png" alt="Your Company">
+    <nav>
+      <a href="#members" class="text-white-light mx-4 hover:text-white">Members</a>
+    </nav>
+  </div>
+</header>
+
+<section class="bg-green-800 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-white mb-4">To the World</h2>
+      <p class="text-lg text-white mb-8">Hello, we are NCT.</p>
+    </div>
+  </section>
+
+  <section class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Meet Our Units</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white overflow-hidden shadow-md transform transition duration-500 ease-in-out hover:rotate-3 hover:scale-105">
+            <h3 class="text-center text-xl font-semibold mb-4">NCT 127</h3>
+            <img src="image/logo4.jpg" alt="Member 1" class="mx-auto mb-4 rounded-full w-48 h-48 object-cover">
+        </div>        
+        <div class="bg-white overflow-hidden shadow-md transform transition duration-500 ease-in-out hover:-translate-y-2 hover:scale-105">
+            <h3 class="text-center text-xl font-semibold mb-4">NCT DREAM</h3>
+            <img src="image/logo2.jpg" alt="Member 1" class="mx-auto mb-4 rounded-full w-48 h-48 object-cover">
+        </div>
+        <div class="bg-white overflow-hidden shadow-md transform transition duration-500 ease-in-out hover:rotate-3 hover:scale-105">
+            <h3 class="text-center text-xl font-semibold mb-4">WayV</h3>
+            <img src="image/logo3.jpg" alt="Member 1" class="mx-auto mb-4 rounded-full w-48 h-48 object-cover">
+        </div>
+        <div class="bg-white overflow-hidden shadow-md transform transition duration-500 ease-in-out hover:-translate-y-2 hover:scale-105">
+            <h3 class="text-center text-xl font-semibold mb-4">NCT WISH</h3>
+            <img src="image/logo1.jpg" alt="Member 1" class="mx-auto mb-4 rounded-full w-48 h-48 object-cover">
+        </div>
+    </div>
+</section>
+
+    <div class="bg-green-800 overflow-hidden border-2 border-green-50">
+        <section class="container mx-auto py-16 text-center" style="color:white">
+        <h2 class="text-3xl font-bold mb-4">History of NCT</h2>
+        <p id="typingEffect" class="text-justify text-lg text-gray-700 leading-relaxed mx-10" style="color:white"></p>
+        </section>    
+    </div>
+    
+    <script>
+        const text = `NCT (Korean: 엔시티; RR: Ensiti; an acronym for Neo Culture Technology) is a 
+        South Korean boy band formed and managed by SM Entertainment. Introduced in January 2016, 
+        the group currently consists of 26 members divided into six different sub-units: NCT U, 
+        NCT 127, NCT Dream, WayV, NCT DoJaeJung, and NCT Wish. They are notable for their versatility 
+        in music, vocal and rap abilities, and powerful performances, and have been cited as K-pop's 
+        "most experimental boy band" due to their concept of having limitless members. As of May 2023, 
+        NCT has recorded more than 32 million album sales across all sub-units, making them the best-selling 
+        act under SM Entertainment and one of the best-selling K-pop artists of all-time. The group debuted 
+        their first sub-unit, the rotational NCT U, on April 9, 2016, with the double digital single 
+        "The 7th Sense" and "Without You". It was followed by the Seoul-based sub-unit NCT 127 on July 7, 
+        2016, with their eponymous extended play and the then-teenaged sub-unit NCT Dream on August 24, 2016, 
+        with the digital single "Chewing Gum". WayV, a seven-member sub-unit based in China and NCT's first 
+        overseas sub-unit, debuted on January 17, 2019, with the single album The Vision. On April 17, 2023, 
+        a new fixed sub-unit featuring members Doyoung, Jaehyun, and Jungwoo debuted as NCT DoJaeJung with 
+        the extended play (EP) Perfume. NCT's next overseas unit, NCT Wish, is set to debut in 2024 as their 
+        final overseas subunit. Although each sub-unit promotes separately, NCT has united four times as a 
+        group to record four full-length albums: Empathy (2018), Resonance (2020), Universe (2021), 
+        and Golden Age (2023). Within two months of release, Resonance sold over 2.6 million copies 
+        across its two parts, becoming the highest-selling physical album released by an act from 
+        SM Entertainment at the time and earning the group their first Daesang (Grand Prize) Award at 
+        the 2020 Asia Artist Awards. Universe, which was released in December 2021, became their most 
+        pre-ordered album at 1.7 million copies, and later surpassed 1.8 million sales after its release.`;
+    
+        const typingEffect = document.getElementById('typingEffect');
+    
+        let i = 0;
+        function typeWriter() {
+        if (i < text.length) {
+            typingEffect.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 20); 
+        }
+        }
+    
+        typeWriter();
+    </script>
+
+    <div class="grid grid-cols-3 gap-4 my-5">
+    <div class="col-span-2 bg-lime-100 p-4 rounded-lg overflow-hidden border-2 border-green-50">
+        <h2 class="text-center text-2xl font-bold">Gallery</h2>
+        <div class="grid grid-cols-3 gap-4 mt-3">
+            <div class="col-span-1 bg-gray-200 flex items-center justify-center rounded-lg">
+                <img src="image/5.jpg" alt="Foto 1" class="h-60 w-full object-cover rounded-lg">
+            </div>
+            <div class="col-span-1 bg-gray-300 flex items-center justify-center rounded-lg">
+                <img src="image/2.jpg" alt="Foto 2" class="h-60 w-full object-cover rounded-lg">
+            </div>
+            <div class="col-span-1 bg-gray-400 flex items-center justify-center rounded-lg">
+                <img src="image/10.jpg" alt="Foto 3" class="h-60 w-full object-cover rounded-lg">
+            </div>
+            <div class="col-span-2 bg-gray-500 flex items-center justify-center rounded-lg">
+                <img src="image/20201.jpg" alt="Foto 4" class="h-60 w-full object-cover rounded-lg">
+            </div>
+            <div class="col-span-1 bg-gray-600 flex items-center justify-center rounded-lg">
+                <img src="image/17.jpg" alt="Foto 5" class="h-60 w-full object-cover rounded-lg">
+            </div>
+            <div class="col-span-1 bg-gray-700 flex items-center justify-center rounded-lg">
+                <img src="image/9.jpg" alt="Foto 6" class="h-60 w-full object-cover rounded-lg">
+            </div>
+            <div class="col-span-2 bg-gray-800 flex items-center justify-center rounded-lg">
+                <img src="image/21.jpg" alt="Foto 7" class="h-60 w-full object-cover rounded-lg">
+            </div>
+        </div>
+    </div>
+    <div class="shadow-md bg-emerald-50 p-6 rounded-lg">
+        <h2 class="text-center text-2xl font-bold mb-4">Background Information</h2>
+        <div class="border border-lime-100 p-4 rounded-lg mb-4">
+            <img src="image/2020.jpg" alt="Members" class="w-full rounded-lg">
+        </div>
+        <ul class="grid grid-cols-1 gap-4">
+            <li class="bg-green-800 bg-opacity-75 rounded-lg px-4 py-2 flex justify-between items-center text-white">
+                <span class="text-lg">Origin:</span>
+                <span class="text-lg">Seoul, South Korea</span>
+            </li>
+            <li class="bg-green-800 bg-opacity-75 rounded-lg px-4 py-2 flex justify-between items-center text-white">
+                <span class="text-lg">Genres:</span>
+                <span class="text-lg">K-pop, C-pop, J-pop, Hip hop, R&B, EDM</span>
+            </li>
+            <li class="bg-green-800 bg-opacity-75 rounded-lg px-4 py-2 flex justify-between items-center text-white">
+                <span class="text-lg">Years active:</span>
+                <span class="text-lg">2016–present</span>
+            </li>
+            <li class="bg-green-800 bg-opacity-75 rounded-lg px-4 py-2 flex justify-between items-center text-white">
+                <span class="text-lg">Labels:</span>
+                <span class="text-lg">SM, Avex Trax</span>
+            </li>
+            <li class="bg-green-800 bg-opacity-75 rounded-lg px-4 py-2 flex justify-between items-center text-white">
+                <span class="text-lg">Members:</span>
+                <span class="text-lg">26 members</span>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+<!--Section For Team-->
+<div class="container my-24 mx-auto md:px-6" id="members">
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-center">
+      <h2 class="mb-12 text-3xl font-bold">
+        Our Team Members
+      </h2>
+
+      <div class="lg:gap-xl-12 grid gap-x-6 md:grid-cols-3 xl:grid-cols-4">
+        <div class="mb-12">
+        <img src="image/taeyong.jpg" class="mx-auto mb-4 shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Lee Tae-yong</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Leader & Rapper</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/johnny.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+  
+          <p class="mb-2 font-bold">Johnny Seo</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/taeil.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Moon Taeil</p>
+          <p class="text-neutral-500 dark:text-neutral-300">
+            Vocals
+          </p>
+        </div>
+        <div class="mb-12">
+          <img src="image/yuta.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Yuta Nakamoto</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/doyoung.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Kim Doyoung</p>
+          <p class="text-neutral-500 dark:text-neutral-300">
+            Vocals
+          </p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/jaehyun.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Jung Jaehyun</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/jungwoo.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Kim Jungwoo</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Vocals</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/mark.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Mark Lee</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/haechan.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Lee Haechan</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Vocals & Dancer</p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/jeno.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Lee Jeno</p>
+          <p class="text-neutral-500 dark:text-neutral-300">
+            Rapper
+          </p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/renjun.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Huang Renjun</p>
+          <p class="text-neutral-500 dark:text-neutral-300">
+            Vocals & Dancer
+          </p>
+        </div>
+  
+        <div class="mb-12">
+          <img src="image/jaemin.jpg"
+            class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+          <p class="mb-2 font-bold">Na Jaemin</p>
+          <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+        </div>
+
+        <div class="mb-12">
+            <img src="image/jisung.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Park Jisung</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+        </div>
+    
+        <div class="mb-12">
+            <img src="image/chenle.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Zhong Chenle</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Vocals</p>
+        </div>
+    
+          <div class="mb-12">
+            <img src="image/ten.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Ten</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Dancer</p>
+          </div>
+    
+          <div class="mb-12">
+            <img src="image/kun.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Qian Kun</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Vocals</p>
+          </div>
+    
+          <div class="mb-12">
+            <img src="image/lucas.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Wong Yukhei</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/xiao.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Xiaojun</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Vocals</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/aheng.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Hendery</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/yangyang.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Yangyang</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/taro.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Shotaro</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/sungchan.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Sungchan</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/yushi.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Tokuno Yushi</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Dancer</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/riku.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Maeda Riku</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/ryo.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Ryo</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Vocals</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/sakuya.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Sakuya</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Rapper</p>
+          </div>
+
+          <div class="mb-12">
+            <img src="image/jaehee.jpg"
+              class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">Jaehee</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Vocals</p>
+          </div>
+
+        <div class="mb-12">
+            <img src="image/sion.jpg"
+                class="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" style="max-width: 100px; max-height: 100px; border-radius: 50%;" />
+            <p class="mb-2 font-bold">SION</p>
+            <p class="text-neutral-500 dark:text-neutral-300">Dancer</p>
+            </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  </div>
+  <!-- Container for demo purpose -->
+
+
+<footer class="bg-green-800 text-white py-8">
+  <div class="container mx-auto text-center">
+    <p>&copy; 2024 Neo Culture Technology.</p>
+  </div>
+</footer>
+
+</body>
+</html>
