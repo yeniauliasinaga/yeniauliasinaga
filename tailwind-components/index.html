@@ -101,7 +101,7 @@
         <p class="text-black font-bold text-3xl">Program Kampus Merdeka</p>
     </div>
     <div class="px-[13%]">
-        <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Program 1 -->
             <div class="bg-white p-6 rounded-xl shadow-lg">
                 <img src="../image/kampus-mengajar.png" alt="Kampus Mengajar" class="w-auto h-40 mx-auto mb-4">
@@ -200,7 +200,7 @@
     <div class="lg:flex py-10 px-[13%]">
       <p class="text-black font-bold text-3xl">Kegiatan Lainnya</p>
   </div>
-   <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[13%]">
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[13%]">
     <!-- Program 8 -->
     <div class="bg-white p-4 rounded-lg shadow-lg py-5 mb-4">
       <img src="../image/mandiri.png" alt="IISMA" class="w-auto h-40 mx-auto mb-4">
@@ -261,7 +261,7 @@
   </div>
   </div>
 </footer>
-<div class="lg:hidden flex justify-between text-white text-sm font-semibold mt-7 px-[13%]">
+<div class="lg:hidden flex justify-between text-white text-sm font-semibold mt-7 px-[13%] py-3">
   <div class="flex flex-col items-center" style="text-decoration: none; color: #333;">
       <i class="fa-solid fa-house"></i>
       <p>Beranda</p>
@@ -284,23 +284,19 @@
 <script>
   function menuprogram() {
     var menuItems = document.querySelector('.menu-items');
-    // Mengecek apakah menu sedang terbuka atau tidak
     var isOpen = menuItems.style.display === 'block';
-    // Menampilkan atau menyembunyikan menu item
     menuItems.style.display = isOpen ? 'none' : 'block';
   }
 
   function programexit() {
     var menuItems = document.querySelector('.menu-items');
-    // Menyembunyikan menu item saat ikon silang diklik
     menuItems.style.display = 'none';
   }
 
-  // Event listener untuk mengubah tampilan menu item ketika ukuran layar berubah
   window.addEventListener('resize', function() {
     var screenWidth = window.innerWidth;
-    if (screenWidth >= 640) { // Ubah angka sesuai breakpoint Anda
-      programexit(); // Menyembunyikan menu item saat layar dilebarkan kembali
+    if (screenWidth >= 640) { 
+      programexit();
     }
   });
 </script>
