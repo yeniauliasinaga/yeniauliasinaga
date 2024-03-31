@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style/output.css" rel="stylesheet">
+  <title>Program | Merdeka Belajar - Kampus Merdeka</title>
+  <link rel="shortcut icon" href="https://kampusmerdeka.kemdikbud.go.id/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/76cfb9238d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="bg-gray-950 z-0">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-20 items-center justify-between">
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex items-center md:items-start">
+                  <img class="h-8 w-auto px-4" src="/image/tutwuri.png" alt="Your Company">
+                  <img class="h-8 w-auto" src="/image/mbkm.png" alt="Your Company">
+                </div>
+              </div>  
+              
+              <div class="sm:hidden">
+                <button type="button" onclick="menuprogram()" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+              
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+              
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              
+            <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-0">
+                  <a href="#" class="text-white px-3 py-3 text-sm font-bold">Beranda</a>
+                  <a href="#" class="text-white px-3 py-3 text-sm font-bold">Program</a>
+                  <a href="#" class="text-white px-3 py-3 text-sm font-bold">Butuh Bantuan?</a>
+                  <a href="#" class="bg-white rounded-full text-black px-3 py-3 text-sm font-bold">
+                    <img class="h-4 w-4 inline-block align-middle mr-1" src="/image/akun.png" alt="">
+                    <span class="align-middle">Masuk ke Akun</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>   
+      </nav>
+
+      
+      <div class="fixed menu-items z-10 top-0 right-0 w-full hidden sm:hidden px-[13%]" style="background-color: #fff; border: 1px solid #ccc;" id="program">
+        <div class="h-20 flex items-center justify-between">
+          <p style="padding: 10px; color: #333; text-decoration: none;">Program Kampus Merdeka</p>
+          <button onclick="programexit()">
+            <i class="text-2xl text-gray-700 fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div href="#" class="flex justify-between hover:bg-gray-300 hover:text-blue-600" style="padding: 10px; ">Kampus Mengajar
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <a href="#" class="flex justify-between" style="padding: 10px;">Magang MSIB
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+        <a href="#" class="flex justify-between" style="padding: 10px;">Studi Independen Bersertifikat
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+        <a href="#" class="flex justify-between" style="padding: 10px;">Pertukaran Mahasiswa Merdeka
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+        <a href="#" class="flex justify-between" style="padding: 10px;">Program dan Kegiatan Lainnya
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+
+      <div class="hidden lg:flex justify-between px-[13%] font-bold">
+        <div class="hover:bg-gray-200 hover:text-blue-600 flex items-center py-3">
+            <a href="#" class="w-32">Kampus Mengajar</a>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="hover:bg-gray-200 hover:text-blue-600 flex items-center py-3">
+            <a href="#" class="w-32">Magang MSIB</a>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="hover:bg-gray-200 hover:text-blue-600 flex items-center py-3">
+            <a href="#" class="w-40">Studi Independen Bersertifikat</a>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="hover:bg-gray-200 hover:text-blue-600 flex items-center py-3">
+            <a href="#" class="w-40">Pertukaran Mahasiswa Merdeka</a>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="hover:bg-gray-200 hover:text-blue-600 flex items-center py-3">
+            <a href="#" class="w-40">Program dan Kegiatan Lainnya</a>
+        </div>
+    </div>
+    
+    <!-- program -->
+    <div class="lg:flex py-10 px-[13%]">
+        <p class="text-black font-bold text-3xl">Program Kampus Merdeka</p>
+    </div>
+    <div class="px-[13%]">
+        <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Program 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <img src="/image/kampus-mengajar.png" alt="Kampus Mengajar" class="w-auto h-40 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Kampus Mengajar</h3>
+                <p class="text-gray-600 mb-4">Bantu peningkatan kualitas pendidikan dasar dengan terlibat langsung pada proses pengajaran di sekolah-sekolah yang berlokasi di seluruh daerah di Indonesia.</p>
+                <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <hr>
+                <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                
+            </div>
+            <!-- Program 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/image/msib.png" alt="Magang MSIB" class="w-auto h-40 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Magang MSIB</h3>
+                <p class="text-gray-600 mb-4">Dapatkan pengalaman dunia kerja secara langsung sebagai persiapan kariermu.</p>
+                <button class="text-center rounded-xl border border-black font-semibold p-2 w-full">Cari Posisi Magang</button>
+                <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <hr>
+                <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                
+            </div>
+            <!-- Program 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/image/msib.png" alt="Studi Independen" class="w-auto h-40 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Studi Independen</h3>
+                <p class="text-gray-600 mb-4">Jalankan proyek penelitian dengan studi kasus nyata dari para pelaku industri ternama.</p>
+                <button class="items-center text-center rounded-xl border border-black font-semibold p-2 w-full">Cari Kelas Studi Independen</button>
+                <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+                <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                <hr>
+                <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+          <!-- Program 4 -->
+          <div class="bg-white p-6 rounded-xl shadow-lg py-5">
+              <img src="/image/pmm.png" alt="PMM" class="w-auto h-40 mx-auto mb-4">
+              <h3 class="text-xl font-semibold mb-2">Pertukaran Mahasiswa Merdeka </h3>
+              <p class="text-gray-600 mb-4">Program pertukaran mahasiswa dalam negeri  yang memberikan pengalaman langsung untuk lebih memaknai keberagaman budaya nusantara.</p>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+              <i class="fa-solid fa-arrow-right ml-2"></i></a>
+              <hr>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+          </div>
+          <!-- Program 5 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg py-5">
+              <img src="/image/wirausaha.png" alt="Wirausaha Merdeka" class="w-auto h-40 mx-auto mb-4">
+              <h3 class="text-xl font-semibold mb-2">Wirausaha Merdeka </h3>
+              <p class="text-gray-600 mb-4">Ikuti program unggulan dari berbagai Perguruan Tinggi yang bertujuan untuk meningkatkan kemampuan wirausaha.</p>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+              <hr>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+          </div>
+          <!-- Program 6 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg py-5">
+              <img src="/image/iisma.png" alt="IISMA" class="w-auto h-40 mx-auto mb-4">
+              <h3 class="text-xl font-semibold mb-2">Indonesian International Student Mobility Awards</h3>
+              <p class="text-gray-600 mb-4">Program pertukaran dengan universitas lain dari seluruh dunia untuk bertukar budaya.</p>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+              <hr>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan 
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a> 
+          </div>
+          <!-- Program 7 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg py-5">
+              <img src="/image/praktisi.png" alt="IISMA" class="w-auto h-40 mx-auto mb-4">
+              <h3 class="text-xl font-semibold mb-2">Praktisi Mengajar</h3>
+              <p class="text-gray-600 mb-4">Ruang kolaborasi antara Praktisi sebagai representasi industri dengan dosen Perguruan Tinggi dalam bentuk pengajaran mata kuliah agar mahasiswa lebih siap untuk masuk ke dunia kerja.</p>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Program
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+              <hr>
+              <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Syarat dan Ketentuan 
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a> 
+          </div>
+      </div>
+    </div>
+    <div class="lg:flex py-10 px-[13%]">
+      <p class="text-black font-bold text-3xl">Kegiatan Lainnya</p>
+  </div>
+   <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[13%]">
+    <!-- Program 8 -->
+    <div class="bg-white p-4 rounded-lg shadow-lg py-5 mb-4">
+      <img src="/image/mandiri.png" alt="IISMA" class="w-auto h-40 mx-auto mb-4">
+      <h3 class="text-xl font-semibold mb-2">Magang Mandiri</h3>
+      <p class="text-gray-600 mb-4">Temukan pengalaman dunia kerja yang dikelola langsung oleh perusahaan tanpa ada batasan kuota dan jadwal yang lebih fleksibel.</p>
+      <a href="#" class="text-blue-600 font-semibold flex justify-between py-3">Tentang Kegiatan
+      <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
+  </div>
+</div>
+
+<footer class="bg-black px-[13%] py-[5%] justify-center lg:block hidden">
+  <div class="flex md:max-w-screen-lg">
+      <div class="grid grid-cols-4 w-full">
+          <!-- Kolom 1: Gambar Tut Wuri -->
+          <img src="../image/tutwuri.png" alt="" class="w-40 h-40">
+          <!-- Kolom 2: Informasi -->
+          <div class="flex flex-col gap-12 text-white">
+              <p class="font-bold">Direktorat Jenderal Pendidikan Tinggi, Riset, dan Teknologi (Diktiristek)</p>
+              <div class="flex flex-col gap-3">
+                  <p>marketing@kampusmerdeka.co</p>
+                  <p>Jl. Jenderal Sudirman, Senayan, Jakarta 10270</p>
+              </div>
+          </div>
+          <!-- Kolom 3: Navigasi -->
+          <div class="flex flex-col gap-12 text-white px-[55px]">
+              <div class="flex flex-col gap-8">
+                  <p class="font-bold">Navigasi</p>
+                  <div class="flex flex-col gap-3">
+                      <a href="">Beranda</a>
+                      <a href="">Tentang Kami</a>
+                      <a href="">Berita</a>
+                      <a href="">Pengumuman</a>
+                      <a href="">FAQ</a>
+                      <a href="">Program</a>
+                      <a href="">Daftar</a>
+                  </div>
+              </div>
+          </div>
+           <!-- Kolom 4: Tautan Eksternal -->
+          <div class="flex flex-col gap-8 text-white">
+            <p class="font-bold">Tautan Eksternal</p>
+            <a href="">Mitra Kampus Merdeka</a>
+        </div>
+      </div>
+  </div>
+  <div class="flex justify-center text-white mt-7 gap-32">
+    <div class="flex gap-5">
+        <a href=""><i class="fa-xl fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-xl fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-xl fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-xl fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-xl fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-xl fa-solid fa-globe"></i></a>
+    </div>
+    <div>
+      <p class="text-sm">Hak Cipta 2022 Kementerian Pendidikan dan Kebudayaan RI <br> Foto oleh ITS, ITERA, and UI</p>
+  </div>
+  </div>
+</footer>
+<div class="lg:hidden flex justify-between text-white text-sm font-semibold mt-7 px-[13%]">
+  <div class="flex flex-col items-center" style="text-decoration: none; color: #333;">
+      <i class="fa-solid fa-house"></i>
+      <p>Beranda</p>
+  </div>
+  <div class="flex flex-col items-center" style="text-decoration: none; color: orangered;">
+    <i class="fa-solid fa-briefcase"></i>
+    <p class="text-black font-bold">Program</p>
+</div>
+  <div class="flex flex-col items-center" style="text-decoration: none; color: #333;">
+      <i class="fa-regular fa-circle-question"></i>
+      <p>FAQ</p>
+  </div>
+  <div class="flex flex-col items-center" style="text-decoration: none; color: #333;">
+      <i class="fa-regular fa-user"></i>
+      <p>Masuk</p>
+  </div>
+</div>
+
+
+<script>
+  function menuprogram() {
+    var menuItems = document.querySelector('.menu-items');
+    // Mengecek apakah menu sedang terbuka atau tidak
+    var isOpen = menuItems.style.display === 'block';
+    // Menampilkan atau menyembunyikan menu item
+    menuItems.style.display = isOpen ? 'none' : 'block';
+  }
+
+  function programexit() {
+    var menuItems = document.querySelector('.menu-items');
+    // Menyembunyikan menu item saat ikon silang diklik
+    menuItems.style.display = 'none';
+  }
+
+  // Event listener untuk mengubah tampilan menu item ketika ukuran layar berubah
+  window.addEventListener('resize', function() {
+    var screenWidth = window.innerWidth;
+    if (screenWidth >= 640) { // Ubah angka sesuai breakpoint Anda
+      programexit(); // Menyembunyikan menu item saat layar dilebarkan kembali
+    }
+  });
+</script>
+
+
+</body>
+</html>
